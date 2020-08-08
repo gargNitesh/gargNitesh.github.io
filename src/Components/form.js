@@ -2,15 +2,8 @@ import React, { Component } from 'react';
 import { Form, Input, Button,DatePicker } from 'antd';
 import Drop from './drop';
 import Table from './table';
-
-
-
-let i=0;
-
-
-    
+let i=0;    
 export default class First extends Component {
-
   constructor(props){
     super(props);
     this.state={
@@ -25,10 +18,8 @@ export default class First extends Component {
   getAttack = (data) => {
     console.log(data)
     this.setState({course:data});
-
 }
 setData=(data)=>{
-  
   this.props.form.setFieldsValue({ Full_Name: data[0].Full_Name,
     email :data[0].email,
     Date_Of_Birth:data[0].Date_Of_Birth,

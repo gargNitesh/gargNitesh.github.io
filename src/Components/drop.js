@@ -12,18 +12,15 @@ class Drop extends React.Component{
             value1:'Select Course'
         }
     }
-
     getChange=()=> {
       console.log("hello");
       
     }  
-
        handleMenuClick=(e)=> {
         this.props.sendAttack(e.key);
         this.setState({
             value1:e.key
         })
-
       }
 render(){
     const menu = (
